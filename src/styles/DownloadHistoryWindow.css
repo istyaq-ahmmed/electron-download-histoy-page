@@ -1,0 +1,157 @@
+/* Download History Window Styles */
+
+.download-history-window {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--colorNeutralBackground1, #ffffff);
+  font-family: var(--fontFamilyBase, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif);
+  color: var(--colorNeutralForeground1, #242424);
+}
+
+.dhw-header {
+  padding: 24px 24px 16px;
+  background-color: var(--colorNeutralBackground1, #ffffff);
+}
+
+.dhw-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--colorNeutralForeground1, #242424);
+}
+
+.dhw-controls {
+  padding: 12px 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--colorNeutralBackground1, #ffffff);
+}
+
+.dhw-search {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  height: 45px;
+}
+
+.dhw-selected-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 12px;
+  border-left: 1px solid var(--colorNeutralStroke2, #e1e1e1);
+}
+
+.dhw-selected-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--colorNeutralForeground3, #8a8a8a);
+  white-space: nowrap;
+}
+
+.dhw-toolbar {
+  padding: 8px 24px;
+  background-color: var(--colorNeutralBackground1, #ffffff);
+}
+
+.dhw-select-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--colorNeutralForeground1, #242424);
+  font-size: 14px;
+}
+
+.dhw-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--colorNeutralBackground2, #f5f5f5);
+}
+
+.dhw-cards {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dhw-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.dhw-empty p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--colorNeutralForeground2, #424242);
+}
+
+.dhw-empty-hint {
+  font-size: 12px;
+  color: var(--colorNeutralForeground3, #8a8a8a);
+  margin-top: 8px !important;
+}
+
+.dhw-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  gap: 12px;
+}
+
+.dhw-end-message {
+  padding: 24px;
+  text-align: center;
+  color: var(--colorNeutralForeground3, #8a8a8a);
+  font-size: 12px;
+}
+
+.dhw-end-message p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dhw-controls {
+    padding: 12px;
+  }
+
+  .dhw-search {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .dhw-selected-actions {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    border-top: 1px solid var(--colorNeutralStroke2, #e1e1e1);
+    padding-top: 12px;
+  }
+
+  .dhw-cards {
+    padding: 12px;
+  }
+
+  .dhw-header {
+    padding: 16px 12px 12px;
+  }
+
+  .dhw-title {
+    font-size: 20px;
+  }
+}
