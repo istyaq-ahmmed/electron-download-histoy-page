@@ -75,16 +75,16 @@ cd download-list-window
 
 ### Step 2: Install Dependencies
 
-Install all required npm packages:
-
-```bash
-npm install
-```
-
-Or if you prefer yarn:
+Install all required packages:
 
 ```bash
 yarn install
+```
+
+Or if you prefer npm:
+
+```bash
+npm install
 ```
 
 ### Step 3: Install Additional Backend Dependencies
@@ -92,7 +92,7 @@ yarn install
 The project uses `better-sqlite3` for database operations. Install it if it's not already included:
 
 ```bash
-npm install better-sqlite3
+yarn add better-sqlite3
 ```
 
 If you encounter compilation issues with better-sqlite3, make sure you have build tools installed:
@@ -126,7 +126,7 @@ const dbPath = path.join(appConfig.root, 'common_user_data.db');
 Run the development server:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 This will start:
@@ -138,7 +138,7 @@ This will start:
 Create an optimized production build:
 
 ```bash
-npm run build
+yarn build
 ```
 
 The built files will be in the `dist/` directory.
@@ -148,7 +148,7 @@ The built files will be in the `dist/` directory.
 Preview the production build locally:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 ## Integration with Electron
@@ -276,10 +276,10 @@ interface DownloadItem {
 
 ## Available Scripts
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint code quality checks
-- `npm run preview` - Preview production build locally
+- `yarn dev` - Start development server with hot reload
+- `yarn build` - Build for production
+- `yarn lint` - Run ESLint code quality checks
+- `yarn preview` - Preview production build locally
 
 ## Database Schema
 
